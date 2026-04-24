@@ -1,23 +1,37 @@
-# Sales Forecasting Project
+# Sales Forecasting Portfolio
 
-## Objective
-Forecast daily sales using historical data to inform inventory and planning decisions.
+## Author
+**Raphael Tankeu Buguieu**
 
-## Data
-- Historical sales data (2013–2015) in `data/cleaned_sales_data.csv`
+---
+
+## Project Overview
+This project demonstrates **end-to-end sales forecasting** using historical daily sales data from 2013–2015.  
+The goal was to forecast the next 30 days of sales using ARIMA, evaluate forecast accuracy, and present results in a **portfolio-ready visualization**.
+
+---
 
 ## Methodology
-- Python-based time series forecasting using ARIMA (2,1,2)
-- 30-day forecast with confidence intervals
-- Evaluation metrics calculated: RMSE, MAE, MAPE
+1. **Data Cleaning & Preprocessing**: Handled missing values and prepared the time series.  
+2. **Forecasting**: Applied ARIMA(2,1,2) using Python (`statsmodels` and `pmdarima`) to predict 30 days ahead.  
+3. **Evaluation**: Calculated RMSE, MAE, and MAPE to measure forecast accuracy.  
+4. **Visualization**: Compared actual vs forecasted sales with confidence intervals.  
+5. **Portfolio Slide**: Combined plot, summary, and evaluation metrics into a professional slide for presentation.
 
-## Scripts
-- `train_model.py` → Fit ARIMA and generate forecast CSV
-- `portfolio_plot.py` → Create clean forecast plot
-- `portfolio_slide.py` → Combine plot + summary text
-- `forecast_evaluation.py` → Compute forecast metrics
-- `portfolio_slide_final.py` → Final portfolio-ready slide with plot, summary, and metrics
+---
 
-## Outputs
-- `models/sales_forecast_arima.csv` → Forecasted sales
-- `models/portfolio_slide_final.png` → Final portfolio-ready slide
+## Portfolio Slide
+![Portfolio Slide](models/portfolio_slide_final.png)
+
+---
+
+## Forecast Evaluation Metrics
+- **RMSE**: 3780.14  
+- **MAE**: 2440.62  
+- **MAPE**: 26.35%
+
+These metrics quantify the accuracy of the forecast and are included in the portfolio slide.
+
+---
+
+## Project Structure
