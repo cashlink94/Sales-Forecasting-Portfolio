@@ -1,0 +1,1 @@
+# requirements.txtpandas>=2.0.0numpy>=1.25.0matplotlib>=3.8.0statsmodels>=0.14.0pmdarima>=2.0.3Pillow>=10.0.0
